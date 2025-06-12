@@ -1,0 +1,97 @@
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { MapPin, Star } from "lucide-react";
+import { getImageProps } from '@/utils/imageOptimization';
+
+export const Contact = () => {
+  const mainImageProps = getImageProps('main');
+
+  return (
+    <section 
+      id="contact" 
+      className="py-20"
+      aria-labelledby="contact-heading"
+    >
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="text-center mb-16">
+          <h2 
+            id="contact-heading" 
+            className="text-4xl md:text-5xl font-bold text-foreground mb-4"
+          >
+            Contact Us
+          </h2>
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+            Get in touch with us to book your authentic Turkish hamam experience or to learn more about our services
+          </p>
+        </div>
+
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <div className="space-y-8">
+            <div>
+              <h3 className="text-2xl font-semibold mb-4">Visit Us</h3>
+              <address className="text-muted-foreground not-italic">
+                Ölüdeniz Mahallesi, Atatürk Bulvarı No:123<br />
+                Fethiye, Muğla 48300<br />
+                Turkey
+              </address>
+            </div>
+
+            <div>
+              <h3 className="text-2xl font-semibold mb-4">Contact Information</h3>
+              <div className="text-muted-foreground">
+                <p>
+                  <strong>Phone:</strong>{' '}
+                  <a href="tel:+902521234567" className="hover:text-primary transition-colors">
+                    +90 252 123 4567
+                  </a>
+                </p>
+                <p>
+                  <strong>Email:</strong>{' '}
+                  <a href="mailto:info@oludenizhamam.com" className="hover:text-primary transition-colors">
+                    info@oludenizhamam.com
+                  </a>
+                </p>
+                <p>
+                  <strong>WhatsApp:</strong>{' '}
+                  <a href="https://wa.me/905329876543" className="hover:text-primary transition-colors">
+                    +90 532 987 6543
+                  </a>
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <h3 className="text-2xl font-semibold mb-4">Opening Hours</h3>
+              <div className="text-muted-foreground">
+                <p>
+                  <time dateTime="09:00">Monday - Sunday: 9:00 AM</time> - <time dateTime="22:00">10:00 PM</time>
+                </p>
+                <p>Last entry: <time dateTime="21:00">9:00 PM</time></p>
+              </div>
+            </div>
+          </div>
+
+          <div className="relative">
+            <img 
+              src={mainImageProps.src}
+              alt={mainImageProps.alt}
+              className="rounded-lg shadow-xl w-full h-96 object-cover"
+              loading={mainImageProps.loading}
+              width={mainImageProps.width}
+              height={mainImageProps.height}
+              sizes={mainImageProps.sizes}
+            />
+            <div 
+              className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent rounded-lg"
+              aria-hidden="true"
+            ></div>
+            <div className="absolute bottom-6 left-6 text-white">
+              <h3 className="text-2xl font-bold mb-2">Beautiful Ölüdeniz</h3>
+              <p className="text-lg opacity-90">Paradise on the Turkish Riviera</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
