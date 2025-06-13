@@ -69,7 +69,7 @@ const Index = () => {
       <Navigation />
       <MetaTags
         title="Ölüdeniz Hamam & Spa - Traditional Turkish Bath Experience"
-        description="Experience authentic Turkish bath rituals and luxury spa treatments in Ölüdeniz. Book your traditional hamam experience today."
+        description="Experience off authentic Turkish bath rituals and luxury spa treatments in Ölüdeniz. Book your traditional hamam experience today."
         image={mainImageProps.src}
         url="/"
       />
