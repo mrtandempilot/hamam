@@ -1,65 +1,145 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <!-- Basic Meta -->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Ölüdeniz Hamam & Spa | Authentic Turkish Bath Experience</title>
-    <meta name="description" content="Experience authentic Turkish hamam and luxury spa treatments in Ölüdeniz. Traditional Turkish bath, massage, and wellness services in the heart of Turkey's beautiful coastal paradise." />
-    <meta name="keywords" content="Turkish hamam, Ölüdeniz hamam, Turkish bath, spa treatments, massage, wellness, traditional Turkish bath, Ölüdeniz spa, luxury spa, Turkish massage" />
     <meta name="author" content="Ölüdeniz Hamam & Spa" />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://oludeniz-hamam.com" />
+
+    <!-- Primary Meta -->
+    <title>Ölüdeniz Hamam & Spa | Authentic Turkish Bath Experience</title>
+    <meta name="description" content="Experience authentic Turkish hamam and luxury spa treatments in Ölüdeniz. Traditional Turkish bath, massage, and wellness services in the heart of Turkey's beautiful coastal paradise." />
+    <meta name="keywords" content="Turkish hamam, Ölüdeniz hamam, Turkish bath, spa treatments, massage, wellness, traditional Turkish bath, Ölüdeniz spa, luxury spa, Turkish massage" />
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://oludeniz-hamam.com" />
     <meta property="og:title" content="Ölüdeniz Hamam & Spa | Authentic Turkish Bath Experience" />
     <meta property="og:description" content="Experience authentic Turkish hamam and luxury spa treatments in Ölüdeniz. Traditional Turkish bath, massage, and wellness services in the heart of Turkey's beautiful coastal paradise." />
-    <meta property="og:image" content="/lovable-uploads/fotos/images (1).jpg" />
+    <meta property="og:image" content="https://oludeniz-hamam.com/images/social-preview.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:site_name" content="Ölüdeniz Hamam & Spa" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:url" content="https://oludeniz-hamam.com" />
     <meta name="twitter:title" content="Ölüdeniz Hamam & Spa | Authentic Turkish Bath Experience" />
     <meta name="twitter:description" content="Experience authentic Turkish hamam and luxury spa treatments in Ölüdeniz. Traditional Turkish bath, massage, and wellness services in the heart of Turkey's beautiful coastal paradise." />
-    <meta name="twitter:image" content="/lovable-uploads/fotos/images (1).jpg" />
+    <meta name="twitter:image" content="https://oludeniz-hamam.com/images/social-preview.jpg" />
+    <meta name="twitter:creator" content="@oludenizhamam" />
+
+    <!-- Multilingual -->
+    <link rel="alternate" hreflang="tr" href="https://oludeniz-hamam.com/tr" />
+    <link rel="alternate" hreflang="en" href="https://oludeniz-hamam.com" />
+
+    <!-- Preloads -->
+    <link rel="preload" href="/fonts/CustomFont.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="/images/hero-banner.webp" as="image" />
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png" />
+    <link rel="manifest" href="/favicons/site.webmanifest" />
 
     <!-- Structured Data -->
     <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Spa",
-        "name": "Ölüdeniz Hamam & Spa",
-        "image": "/lovable-uploads/fotos/images (1).jpg",
-        "description": "Experience authentic Turkish hamam and luxury spa treatments in Ölüdeniz. Traditional Turkish bath, massage, and wellness services in the heart of Turkey's beautiful coastal paradise.",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Your Street Address",
-          "addressLocality": "Ölüdeniz",
-          "addressRegion": "Muğla",
-          "postalCode": "Your Postal Code",
-          "addressCountry": "TR"
+    {
+      "@context": "https://schema.org",
+      "@type": "HealthAndBeautyBusiness",
+      "@id": "https://oludeniz-hamam.com#business",
+      "name": "Ölüdeniz Hamam & Spa",
+      "image": [
+        "https://oludeniz-hamam.com/images/exterior.jpg",
+        "https://oludeniz-hamam.com/images/interior-1.jpg"
+      ],
+      "description": "Authentic Turkish hamam experience in Ölüdeniz with traditional bath rituals and modern spa treatments.",
+      "url": "https://oludeniz-hamam.com",
+      "telephone": "+90-252-617-0060",
+      "priceRange": "$$$",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "Çalış Beach Road, No:42",
+        "addressLocality": "Ölüdeniz",
+        "addressRegion": "Muğla",
+        "postalCode": "48300",
+        "addressCountry": "TR"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "36.5500",
+        "longitude": "29.1167"
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+          "opens": "09:00",
+          "closes": "21:00"
         },
-        "geo": {
-          "@type": "GeoCoordinates",
-          "latitude": "Your Latitude",
-          "longitude": "Your Longitude"
-        },
-        "url": "https://oludeniz-hamam.com",
-        "telephone": "Your Phone Number",
-        "priceRange": "$$",
-        "openingHours": "Mo-Su 09:00-21:00",
-        "aggregateRating": {
-          "@type": "AggregateRating",
-          "ratingValue": "4.9",
-          "reviewCount": "200"
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": ["Saturday", "Sunday"],
+          "opens": "10:00",
+          "closes": "20:00"
         }
+      ],
+      "sameAs": [
+        "https://www.facebook.com/oludenizhamam",
+        "https://www.instagram.com/oludenizhamam"
+      ],
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Spa Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Traditional Turkish Bath",
+              "description": "Full body wash with kese exfoliation and foam massage",
+              "price": "400",
+              "priceCurrency": "TRY"
+            }
+          },
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Aromatherapy Massage",
+              "description": "60-minute massage with essential oils",
+              "price": "600",
+              "priceCurrency": "TRY"
+            }
+          }
+        ]
       }
+    }
     </script>
+
+    <!-- Google Verification -->
+    <meta name="google-site-verification" content="YOUR_GOOGLE_SEARCH_CONSOLE_CODE" />
   </head>
 
   <body>
+    <!-- Hidden Trust Signals -->
+    <div hidden itemscope itemtype="https://schema.org/Organization">
+      <span itemprop="name">Ölüdeniz Hamam & Spa</span>
+      <span itemprop="email">info@oludeniz-hamam.com</span>
+      <span itemprop="telephone">+90-252-617-0060</span>
+    </div>
+
     <div id="root"></div>
     <script type="module" src="/src/main.tsx"></script>
+
+    <!-- Trust Badge (visible) -->
+    <div style="display:none;">
+      <img src="/images/trust-badges/tripadvisor-excellence.png" alt="TripAdvisor Excellence Award" loading="lazy">
+      <img src="/images/trust-badges/safe-tourism-certified.png" alt="Safe Tourism Certified" loading="lazy">
+    </div>
   </body>
 </html>
