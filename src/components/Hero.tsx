@@ -33,7 +33,7 @@ const Hero = () => {
         </div>
         
         <h1 className="text-5xl md:text-7xl font-bold mb-6 leading-tight">
-          Authentic Turkish
+          Ölüdeniz Turkish
           <span className="block text-primary">Hamam & Spa</span>
         </h1>
         
