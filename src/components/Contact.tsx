@@ -41,8 +41,8 @@ export const Contact = () => {
               <div className="text-muted-foreground">
                 <p>
                   <strong>Phone:</strong>{' '}
-                  <a href="tel:+902521234567" className="hover:text-primary transition-colors">
-                    +90 252 123 4567
+                  <a href="tel:+905362222813" className="hover:text-primary transition-colors">
+                    +90 536 222 2813
                   </a>
                 </p>
                 <p>
@@ -53,8 +53,8 @@ export const Contact = () => {
                 </p>
                 <p>
                   <strong>WhatsApp:</strong>{' '}
-                  <a href="https://wa.me/905329876543" className="hover:text-primary transition-colors">
-                    +90 532 987 6543
+                  <a href="https://wa.me/905362222813" className="hover:text-primary transition-colors">
+                    +90 536 222 2813
                   </a>
                 </p>
               </div>
