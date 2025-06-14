@@ -70,22 +70,22 @@ export const Footer = () => {
                 </span>
               </div>
               <p className="text-sm">Phone: +90 536 222 2813</p>
-              <p className="text-sm">Email: info@oludenizhamam.com</p>
+              <p className="text-sm">Email: oludenizspa@gmail.com</p>
             </div>
 
             {/* Social Media Buttons */}
             <div className="mt-6 flex space-x-4">
               <a
-                href="https://instagram.com/oludenizhamam"
+                href="https://instagram.com/oludenizspa"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-500 p-2 rounded-full transition-all hover:scale-110 hover:shadow-lg"
+                className="hover:text-primary transition-colors"
                 aria-label="Follow us on Instagram"
               >
                 <Instagram className="h-5 w-5 text-white" />
               </a>
               <a
-                href="https://facebook.com/oludenizhamam"
+                href="https://facebook.com/oludenizspa"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-[#1877F2] p-2 rounded-full transition-all hover:scale-110 hover:shadow-lg"
@@ -94,7 +94,7 @@ export const Footer = () => {
                 <Facebook className="h-5 w-5 text-white" />
               </a>
               <a
-                href="https://twitter.com/oludenizhamam"
+                href="https://twitter.com/oludenizspa"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-[#1DA1F2] p-2 rounded-full transition-all hover:scale-110 hover:shadow-lg"

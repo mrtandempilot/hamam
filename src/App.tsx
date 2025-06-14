@@ -4,6 +4,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { HelmetProvider } from 'react-helmet-async';
+import { Analytics } from '@vercel/analytics/react';
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import { ServiceSchema } from "./components/ServiceSchema";
@@ -28,6 +29,7 @@ const App = () => (
         </Router>
       </HelmetProvider>
     </TooltipProvider>
+    <Analytics />
   </QueryClientProvider>
 );
 

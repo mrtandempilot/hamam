@@ -45,7 +45,7 @@ export const LocalBusinessSchema = () => {
       ],
       "sameAs": [
         "https://www.facebook.com/oludenizhamam",
-        "https://www.instagram.com/oludenizhamam",
+        "https://www.instagram.com/oludenizspa",
         "https://www.tripadvisor.com/oludenizhamam"
       ],
       "hasOfferCatalog": {
