@@ -1,4 +1,4 @@
-import { MapPin, Star } from "lucide-react";
+import { MapPin, Star, Instagram, Facebook, Twitter } from "lucide-react";
 import { Link } from "react-router-dom";
 import { scrollToSection } from "@/utils/scrollToSection";
 
@@ -27,45 +27,36 @@ export const Footer = () => {
 
           <div>
             <h4 className="text-lg font-semibold mb-4">Quick Links</h4>
-            <ul className="space-y-2">
-              <li><Link to="/" className="hover:text-accent transition-colors">Home</Link></li>
-              <li>
-                <a 
-                  href="/" 
-                  onClick={(e) => handleNavClick(e, 'services')}
-                  className="hover:text-accent transition-colors"
-                >
-                  Services
-                </a>
-              </li>
-              <li>
-                <a 
-                  href="/" 
-                  onClick={(e) => handleNavClick(e, 'about')}
-                  className="hover:text-accent transition-colors"
-                >
-                  About
-                </a>
-              </li>
-              <li>
-                <a 
-                  href="/" 
-                  onClick={(e) => handleNavClick(e, 'gallery')}
-                  className="hover:text-accent transition-colors"
-                >
-                  Gallery
-                </a>
-              </li>
-              <li>
-                <a 
-                  href="/" 
-                  onClick={(e) => handleNavClick(e, 'contact')}
-                  className="hover:text-accent transition-colors"
-                >
-                  Contact
-                </a>
-              </li>
-            </ul>
+            <div className="space-y-2">
+              <a
+                href="#services"
+                onClick={(e) => handleNavClick(e, 'services')}
+                className="block text-sm hover:text-primary-foreground/80 transition-colors"
+              >
+                Services
+              </a>
+              <a
+                href="#about"
+                onClick={(e) => handleNavClick(e, 'about')}
+                className="block text-sm hover:text-primary-foreground/80 transition-colors"
+              >
+                About Us
+              </a>
+              <a
+                href="#gallery"
+                onClick={(e) => handleNavClick(e, 'gallery')}
+                className="block text-sm hover:text-primary-foreground/80 transition-colors"
+              >
+                Gallery
+              </a>
+              <a
+                href="#contact"
+                onClick={(e) => handleNavClick(e, 'contact')}
+                className="block text-sm hover:text-primary-foreground/80 transition-colors"
+              >
+                Contact
+              </a>
+            </div>
           </div>
 
           <div>
@@ -78,8 +69,39 @@ export const Footer = () => {
                   48300 Oludeniz, Fethiye/Mugla, Turkey
                 </span>
               </div>
-              <p className="text-sm">Phone: +90 252 617 0123</p>
+              <p className="text-sm">Phone: +90 536 222 2813</p>
               <p className="text-sm">Email: info@oludenizhamam.com</p>
+            </div>
+
+            {/* Social Media Buttons */}
+            <div className="mt-6 flex space-x-4">
+              <a
+                href="https://instagram.com/oludenizhamam"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white/10 hover:bg-white/20 p-2 rounded-full transition-colors"
+                aria-label="Follow us on Instagram"
+              >
+                <Instagram className="h-5 w-5" />
+              </a>
+              <a
+                href="https://facebook.com/oludenizhamam"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white/10 hover:bg-white/20 p-2 rounded-full transition-colors"
+                aria-label="Follow us on Facebook"
+              >
+                <Facebook className="h-5 w-5" />
+              </a>
+              <a
+                href="https://twitter.com/oludenizhamam"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-white/10 hover:bg-white/20 p-2 rounded-full transition-colors"
+                aria-label="Follow us on Twitter"
+              >
+                <Twitter className="h-5 w-5" />
+              </a>
             </div>
           </div>
         </div>
