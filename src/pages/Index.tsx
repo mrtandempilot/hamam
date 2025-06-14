@@ -12,7 +12,7 @@ import { Footer } from "@/components/Footer";
 import { FAQ } from "@/components/FAQ";
 import { Reviews } from "@/components/Reviews";
 import Blog from '@/components/Blog';
-import ServiceSchema from '@/components/ServiceSchema';
+import { ServiceSchema } from '@/components/ServiceSchema';
 import MetaTags from '@/components/MetaTags';
 
 type ServiceImageKey = 'services.traditional' | 'services.royal' | 'services.couples';
@@ -42,13 +42,13 @@ const Index = () => {
     const schema = {
       "@context": "https://schema.org",
       "@type": "WebSite",
-      "name": "Ölüdeniz Hamam & Spa",
-      "url": "https://oludeniz-hamam.com",
+      "name": "Ölüdeniz Turkish Hamam & Spa",
+      "url": "https://oludenizturkishbath.com",
       "potentialAction": {
         "@type": "SearchAction",
         "target": {
           "@type": "EntryPoint",
-          "urlTemplate": "https://oludeniz-hamam.com/search?q={search_term_string}"
+          "urlTemplate": "https://oludenizturkishbath.com/search?q={search_term_string}"
         },
         "query-input": "required name=search_term_string"
       }
@@ -68,12 +68,12 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
       <MetaTags
-        title="Ölüdeniz Hamam & Spa - Traditional Turkish Bath Experience"
-        description="Experience off authentic Turkish bath rituals and luxury spa treatments in Ölüdeniz. Book your traditional hamam experience today."
+        title="Ölüdeniz Turkish Hamam & Spa - Traditional Turkish Bath Experience"
+        description="Experience authentic Turkish bath rituals and luxury spa treatments in Ölüdeniz. Book your traditional hamam experience today."
         image={mainImageProps.src}
         url="/"
       />
-      <Breadcrumb items={[{ label: 'Home', href: '/' }]} />
+      <Breadcrumb items={[{ label: 'Home', path: '/' }]} />
       <Hero />
       <Services />
       <About />
