@@ -12,7 +12,6 @@ import { Footer } from "@/components/Footer";
 import { FAQ } from "@/components/FAQ";
 import { Reviews } from "@/components/Reviews";
 import Blog from '@/components/Blog';
-import { ServiceSchema } from '@/components/ServiceSchema';
 import MetaTags from '@/components/MetaTags';
 
 type ServiceImageKey = 'services.traditional' | 'services.royal' | 'services.couples';
@@ -35,28 +34,28 @@ const services = [
   }
 ] as const;
 
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "Ölüdeniz Turkish Hamam & Spa",
+  "url": "https://oludenizturkishbath.com",
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://oludenizturkishbath.com/search?q={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
+  }
+};
+
 const Index = () => {
   const mainImageProps = getImageProps('main');
 
   useEffect(() => {
-    const schema = {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "Ölüdeniz Turkish Hamam & Spa",
-      "url": "https://oludenizturkishbath.com",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": {
-          "@type": "EntryPoint",
-          "urlTemplate": "https://oludenizturkishbath.com/search?q={search_term_string}"
-        },
-        "query-input": "required name=search_term_string"
-      }
-    };
-
     const script = document.createElement('script');
     script.type = 'application/ld+json';
-    script.text = JSON.stringify(schema);
+    script.text = JSON.stringify(websiteSchema);
     document.head.appendChild(script);
 
     return () => {
@@ -83,7 +82,6 @@ const Index = () => {
       <FAQ />
       <Contact />
       <Footer />
-      <ServiceSchema />
     </div>
   );
 };
