@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { getImageProps } from '@/utils/imageOptimization';
-import { MapPin, Star } from "lucide-react";
+import { MapPin, Star, MessageCircle } from "lucide-react";
 
 const Hero = () => {
   const mainImageProps = getImageProps('main');
@@ -11,6 +11,18 @@ const Hero = () => {
       className="relative h-[80vh] flex items-center justify-center overflow-hidden"
       aria-label="Welcome to Ölüdeniz Hamam & Spa"
     >
+      {/* WhatsApp Button */}
+      <a
+        href="https://wa.me/905329876543"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="fixed left-6 bottom-6 z-50 bg-green-500 text-white p-4 rounded-full shadow-lg hover:bg-green-600 transition-colors duration-300 flex items-center gap-2"
+        aria-label="Contact us on WhatsApp"
+      >
+        <MessageCircle className="h-6 w-6" />
+        <span className="hidden sm:inline">WhatsApp</span>
+      </a>
+
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
@@ -51,15 +63,6 @@ const Hero = () => {
             />
           ))}
           <span className="ml-3 text-lg">4.9/5 from 200+ reviews</span>
-        </div>
-
-        <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <Link
-            to="/services"
-            className="bg-primary text-primary-foreground px-8 py-3 rounded-full text-lg font-semibold hover:bg-primary/90 transition-colors"
-          >
-            Book Your Experience
-          </Link>
         </div>
       </div>
     </section>

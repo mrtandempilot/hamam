@@ -44,9 +44,6 @@ export const Navigation = () => {
                   {item.name}
                 </a>
               ))}
-              <Button variant="default" className="ml-4">
-                Book Now
-              </Button>
             </div>
           </div>
 
@@ -77,9 +74,6 @@ export const Navigation = () => {
                 {item.name}
               </a>
             ))}
-            <Button variant="default" className="w-full mt-4">
-              Book Now
-            </Button>
           </div>
         </div>
       )}
