@@ -79,28 +79,28 @@ export const Footer = () => {
                 href="https://instagram.com/oludenizhamam"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-white/10 hover:bg-white/20 p-2 rounded-full transition-colors"
+                className="bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-500 p-2 rounded-full transition-all hover:scale-110 hover:shadow-lg"
                 aria-label="Follow us on Instagram"
               >
-                <Instagram className="h-5 w-5" />
+                <Instagram className="h-5 w-5 text-white" />
               </a>
               <a
                 href="https://facebook.com/oludenizhamam"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-white/10 hover:bg-white/20 p-2 rounded-full transition-colors"
+                className="bg-[#1877F2] p-2 rounded-full transition-all hover:scale-110 hover:shadow-lg"
                 aria-label="Follow us on Facebook"
               >
-                <Facebook className="h-5 w-5" />
+                <Facebook className="h-5 w-5 text-white" />
               </a>
               <a
                 href="https://twitter.com/oludenizhamam"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="bg-white/10 hover:bg-white/20 p-2 rounded-full transition-colors"
+                className="bg-[#1DA1F2] p-2 rounded-full transition-all hover:scale-110 hover:shadow-lg"
                 aria-label="Follow us on Twitter"
               >
-                <Twitter className="h-5 w-5" />
+                <Twitter className="h-5 w-5 text-white" />
               </a>
             </div>
           </div>
