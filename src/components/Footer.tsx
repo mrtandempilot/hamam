@@ -79,7 +79,7 @@ export const Footer = () => {
                 href="https://instagram.com/oludenizspa"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="hover:text-primary transition-colors"
+                className="bg-gradient-to-tr from-yellow-400 via-pink-500 to-purple-500 p-2 rounded-full transition-all hover:scale-110 hover:shadow-lg"
                 aria-label="Follow us on Instagram"
               >
                 <Instagram className="h-5 w-5 text-white" />
