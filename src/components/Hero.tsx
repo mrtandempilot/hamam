@@ -27,12 +27,13 @@ const Hero = () => {
       <div className="absolute inset-0">
         <img
           src={mainImageProps.src}
-          alt={mainImageProps.alt}
+          alt="Traditional Turkish Hamam interior with marble walls and steam room - Ölüdeniz Hamam & Spa"
           className="w-full h-full object-cover"
-          loading={mainImageProps.loading}
+          loading="eager"
           width={mainImageProps.width}
           height={mainImageProps.height}
-          sizes={mainImageProps.sizes}
+          sizes="100vw"
+          fetchPriority="high"
         />
         <div className="absolute inset-0 bg-black/50"></div>
       </div>

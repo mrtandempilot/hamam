@@ -1,6 +1,30 @@
+# Allow all crawlers
 User-agent: *
 Allow: /
+
+# Sitemap location
+Sitemap: https://oludenizturkishbath.com/sitemap.xml
+
+# Crawl delay
+Crawl-delay: 10
+
+# Disallow admin and private areas
 Disallow: /admin/
 Disallow: /private/
+Disallow: /api/
+Disallow: /_headers
+Disallow: /_redirects
+Disallow: /sw.js
+Disallow: /manifest.json
 
-Sitemap: https://oludeniz-hamam.com/sitemap.xml
+# Allow important assets
+Allow: /*.js$
+Allow: /*.css$
+Allow: /*.png$
+Allow: /*.jpg$
+Allow: /*.gif$
+Allow: /*.svg$
+Allow: /*.webp$
+Allow: /*.woff2$
+Allow: /*.woff$
+Allow: /*.ttf$

@@ -1,12 +1,14 @@
-import { useEffect } from 'react';
-import { ChevronRight, Home } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { ChevronRight, Home } from 'lucide-react';
+import { useEffect } from 'react';
+
+interface BreadcrumbItem {
+  label: string;
+  href: string;
+}
 
 interface BreadcrumbProps {
-  items: {
-    label: string;
-    href: string;
-  }[];
+  items: BreadcrumbItem[];
 }
 
 const BreadcrumbSchema = ({ items }: BreadcrumbProps) => {
@@ -35,54 +37,48 @@ const BreadcrumbSchema = ({ items }: BreadcrumbProps) => {
   return null;
 };
 
-export const Breadcrumb = ({ items }: BreadcrumbProps) => {
-  const allItems = [
-    { label: 'Home', href: '/' },
-    ...items
-  ];
-
+const Breadcrumb = ({ items }: BreadcrumbProps) => {
   return (
     <nav 
-      className="py-4 px-4 sm:px-6 lg:px-8"
+      className="bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60"
       aria-label="Breadcrumb"
     >
-      <ol 
-        className="flex items-center space-x-2 text-sm text-muted-foreground"
-        role="list"
-      >
-        {allItems.map((item, index) => (
-          <li 
-            key={index}
-            className="flex items-center"
-            role="listitem"
-          >
-            {index > 0 && (
-              <ChevronRight className="h-4 w-4 mx-2" aria-hidden="true" />
-            )}
-            {index === 0 ? (
-              <Link 
-                to={item.href}
-                className="flex items-center hover:text-primary transition-colors"
-                aria-label="Go to home page"
-              >
-                <Home className="h-4 w-4" aria-hidden="true" />
-              </Link>
-            ) : index === allItems.length - 1 ? (
-              <span className="font-medium text-foreground" aria-current="page">
-                {item.label}
-              </span>
-            ) : (
-              <Link 
-                to={item.href}
-                className="hover:text-primary transition-colors"
-              >
-                {item.label}
-              </Link>
-            )}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <ol className="flex items-center space-x-2 py-4">
+          <li>
+            <Link 
+              to="/" 
+              className="text-muted-foreground hover:text-foreground transition-colors"
+              aria-label="Home"
+            >
+              <Home className="h-4 w-4" />
+            </Link>
           </li>
-        ))}
-      </ol>
-      <BreadcrumbSchema items={allItems} />
+          {items.map((item, index) => (
+            <li key={item.href} className="flex items-center">
+              <ChevronRight className="h-4 w-4 text-muted-foreground mx-2" />
+              {index === items.length - 1 ? (
+                <span 
+                  className="text-sm font-medium text-foreground"
+                  aria-current="page"
+                >
+                  {item.label}
+                </span>
+              ) : (
+                <Link
+                  to={item.href}
+                  className="text-sm text-muted-foreground hover:text-foreground transition-colors"
+                >
+                  {item.label}
+                </Link>
+              )}
+            </li>
+          ))}
+        </ol>
+      </div>
+      <BreadcrumbSchema items={items} />
     </nav>
   );
-}; 
+};
+
+export default Breadcrumb; 
