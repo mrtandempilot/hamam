@@ -85,7 +85,7 @@ export const Footer = () => {
                 <Instagram className="h-5 w-5 text-white" />
               </a>
               <a
-                href="https://facebook.com/oludenizspacenter"
+                href="https://www.facebook.com/oludenizspacenter"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-[#1877F2] p-2 rounded-full transition-all hover:scale-110 hover:shadow-lg"
