@@ -25,7 +25,13 @@ export const Navigation = () => {
     <nav className="fixed top-0 w-full bg-background/95 backdrop-blur-sm z-50 border-b border-border">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
-          <div className="flex-shrink-0">
+          <div className="flex items-center gap-4">
+            {/* Logo */}
+            <img 
+              src="/logo.png" 
+              alt="Oludeniz Hamam & Spa Logo" 
+              className="w-[60px] h-[60px] object-contain"
+            />
             <Link to="/" className="text-2xl font-bold text-primary">
               Oludeniz Hamam & Spa
             </Link>

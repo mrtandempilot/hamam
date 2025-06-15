@@ -65,8 +65,8 @@ export const Footer = () => {
               <div className="flex items-start">
                 <MapPin className="h-5 w-5 mr-2 mt-0.5 flex-shrink-0" />
                 <span className="text-sm">
-                  Oludeniz Mahallesi, Deniz Sokak No: 15<br />
-                  48300 Oludeniz, Fethiye/Mugla, Turkey
+                  Cumhuriyet, Çarşı Cd. No:16<br />
+                  48300 Fethiye/Muğla, Turkey
                 </span>
               </div>
               <p className="text-sm">Phone: +90 536 222 2813</p>
@@ -74,7 +74,7 @@ export const Footer = () => {
             </div>
 
             {/* Social Media Buttons */}
-            <div className="mt-6 flex space-x-4">
+            <div className="mt-6 flex items-center space-x-4">
               <a
                 href="https://instagram.com/oludenizspa"
                 target="_blank"
@@ -101,6 +101,15 @@ export const Footer = () => {
                 aria-label="Follow us on Twitter"
               >
                 <Twitter className="h-5 w-5 text-white" />
+              </a>
+              <a
+                href="https://www.tripadvisor.com/oludenizspa"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-[#00AF87] px-3 py-2 rounded-full transition-all hover:scale-110 hover:shadow-lg text-white text-sm font-medium"
+                aria-label="Find us on TripAdvisor"
+              >
+                TripAdvisor
               </a>
             </div>
           </div>

@@ -2,6 +2,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { MapPin, Star } from "lucide-react";
 import { getImageProps } from '@/utils/imageOptimization';
+import { Map } from "./Map";
 
 export const Contact = () => {
   const mainImageProps = getImageProps('main');
@@ -25,12 +26,12 @@ export const Contact = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
           <div className="space-y-8">
             <div>
               <h3 className="text-2xl font-semibold mb-4">Visit Us</h3>
               <address className="text-muted-foreground not-italic">
-                Ölüdeniz Mahallesi, Atatürk Bulvarı No:123<br />
+                Cumhuriyet, Çarşı Cd. No:16<br />
                 Fethiye, Muğla 48300<br />
                 Turkey
               </address>
@@ -47,8 +48,8 @@ export const Contact = () => {
                 </p>
                 <p>
                   <strong>Email:</strong>{' '}
-                  <a href="mailto:info@oludenizhamam.com" className="hover:text-primary transition-colors">
-                    info@oludenizhamam.com
+                  <a href="mailto:oludenizspa@gmail.com" className="hover:text-primary transition-colors">
+                    oludenizspa@gmail.com
                   </a>
                 </p>
                 <p>
@@ -72,23 +73,7 @@ export const Contact = () => {
           </div>
 
           <div className="relative">
-            <img 
-              src={mainImageProps.src}
-              alt={mainImageProps.alt}
-              className="rounded-lg shadow-xl w-full h-96 object-cover"
-              loading={mainImageProps.loading}
-              width={mainImageProps.width}
-              height={mainImageProps.height}
-              sizes={mainImageProps.sizes}
-            />
-            <div 
-              className="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent rounded-lg"
-              aria-hidden="true"
-            ></div>
-            <div className="absolute bottom-6 left-6 text-white">
-              <h3 className="text-2xl font-bold mb-2">Beautiful Ölüdeniz</h3>
-              <p className="text-lg opacity-90">Paradise on the Turkish Riviera</p>
-            </div>
+            <Map />
           </div>
         </div>
       </div>
