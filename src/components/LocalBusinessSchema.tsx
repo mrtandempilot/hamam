@@ -46,7 +46,7 @@ export const LocalBusinessSchema = () => {
       "sameAs": [
         "https://www.facebook.com/oludenizhamam",
         "https://www.instagram.com/oludenizspa",
-        "https://www.tripadvisor.com/oludenizhamam"
+        "https://www.tripadvisor.com/UserReviewEdit-g298031-d33261037-Oludenizspa-Fethiye_Mugla_Province_Turkish_Aegean_Coast.html"
       ],
       "hasOfferCatalog": {
         "@type": "OfferCatalog",

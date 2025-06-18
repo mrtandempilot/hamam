@@ -103,7 +103,7 @@ export const Footer = () => {
                 <Twitter className="h-5 w-5 text-white" />
               </a>
               <a
-                href="https://www.tripadvisor.com/oludenizspa"
+                href="https://www.tripadvisor.com/UserReviewEdit-g298031-d33261037-Oludenizspa-Fethiye_Mugla_Province_Turkish_Aegean_Coast.html"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="bg-[#00AF87] px-3 py-2 rounded-full transition-all hover:scale-110 hover:shadow-lg text-white text-sm font-medium"
