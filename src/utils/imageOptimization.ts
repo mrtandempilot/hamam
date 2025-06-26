@@ -144,7 +144,7 @@ export const getGalleryImageProps = (image: keyof typeof images.gallery): ImageM
 };
 
 export const getPaketImageProps = (filename: string): ImageMetadata => ({
-  src: `/lovable-uploads/fotos/paket/${filename}`,
+  src: `/lovable-uploads/fotos/${filename}`,
   alt: filename.replace(/[-_]/g, ' ').replace(/\.[a-zA-Z]+$/, ''),
   width: 800,
   height: 600,
