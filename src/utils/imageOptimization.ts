@@ -141,4 +141,13 @@ export const getBlogImageProps = (post: keyof typeof images.blog): ImageMetadata
 
 export const getGalleryImageProps = (image: keyof typeof images.gallery): ImageMetadata => {
   return images.gallery[image];
-}; 
+};
+
+export const getPaketImageProps = (filename: string): ImageMetadata => ({
+  src: `/lovable-uploads/fotos/paket/${filename}`,
+  alt: filename.replace(/[-_]/g, ' ').replace(/\.[a-zA-Z]+$/, ''),
+  width: 800,
+  height: 600,
+  loading: 'lazy',
+  sizes: '(max-width: 768px) 100vw, 800px'
+}); 
