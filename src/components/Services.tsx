@@ -12,7 +12,7 @@ const services = [
       'Full Body Relax Massage (30 min.) (€50)'
     ],
     price: '',
-    paketImage: 'images.jpeg',
+    paketImage: 'turkish.jpeg',
     duration: '',
     category: 'Traditional Services'
   },
@@ -27,7 +27,7 @@ const services = [
       'Full Body Relax Massage (30 min.) (€50)'
     ],
     price: '',
-    paketImage: 'images (1).jpeg',
+    paketImage: 'hammam.jpeg',
     duration: '',
     category: 'Traditional Services'
   },
@@ -41,7 +41,7 @@ const services = [
       'Bronz Oil Massage (40 min.) (€60)'
     ],
     price: '',
-    paketImage: 'images (2).jpeg',
+    paketImage: 'mam.jpeg',
     duration: '',
     category: 'Traditional Services'
   },
@@ -56,7 +56,7 @@ const services = [
       'Medical Massage (50 min.) (€70)'
     ],
     price: '',
-    paketImage: 'images (3).jpeg',
+    paketImage: 'bath.jpeg',
     duration: '',
     category: 'Traditional Services'
   },
@@ -72,7 +72,7 @@ const services = [
       '(100 min.)'
     ],
     price: '',
-    paketImage: 'images (4).jpeg',
+    paketImage: 'masage.jpeg',
     duration: '',
     category: 'Traditional Services'
   },
@@ -85,7 +85,7 @@ const services = [
       'SEA SALT PEELING (30 min.) (€30)'
     ],
     price: '',
-    paketImage: 'images (5).jpeg',
+    paketImage: 'images.jpeg',
     duration: '',
     category: 'Traditional Services'
   },
@@ -100,7 +100,7 @@ const services = [
       'BRONZE MASSAGE (35 min.) (€40)'
     ],
     price: '',
-    paketImage: 'download.jpeg',
+    paketImage: 'hamm.jpeg',
     duration: '',
     category: 'Traditional Services'
   },
@@ -116,7 +116,7 @@ const services = [
       'MANDARA MASSAGE (4 HANDS) (60 min.) (€70)'
     ],
     price: '',
-    paketImage: 'download (1).jpeg',
+    paketImage: 'download.jpeg',
     duration: '',
     category: 'Traditional Services'
   }
