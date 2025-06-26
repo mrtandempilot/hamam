@@ -1,30 +1,124 @@
 import { Link } from 'react-router-dom';
-import { getImageProps } from '@/utils/imageOptimization';
+import { getImageProps, getPaketImageProps } from '@/utils/imageOptimization';
 
 const services = [
   {
-    name: 'Traditional Turkish Hamam',
-    description: 'Experience the authentic Turkish bath ritual with our traditional hamam service.',
-    price: '€45',
-    imageKey: 'services.traditional',
-    duration: '60 minutes',
+    name: 'BEFORE SUN PROGRAMME',
+    description: [
+      'Turkish Bath & Scrub Peeling (€50) (80 min.)',
+      'Foam Massage (€50)',
+      'Face Mask (€50)',
+      'Face Massage (€50)',
+      'Full Body Relax Massage (30 min.) (€50)'
+    ],
+    price: '',
+    paketImage: 'images.jpeg',
+    duration: '',
     category: 'Traditional Services'
   },
   {
-    name: 'Royal Hamam Experience',
-    description: 'Indulge in our premium hamam experience with additional treatments and luxury amenities.',
-    price: '€85',
-    imageKey: 'services.royal',
-    duration: '90 minutes',
-    category: 'Premium Services'
+    name: 'AFTER SUN PROGRAMME',
+    description: [
+      'Turkish Bath (€50)',
+      'Honey or Chocolate (€50) (80 min.)',
+      'Foam Massage (€50)',
+      'Face Mask (€50)',
+      'Face Massage (€50)',
+      'Full Body Relax Massage (30 min.) (€50)'
+    ],
+    price: '',
+    paketImage: 'images (1).jpeg',
+    duration: '',
+    category: 'Traditional Services'
   },
   {
-    name: 'Couples Hamam Package',
-    description: 'Share the authentic Turkish bath experience with your loved one in a private setting.',
-    price: '€120',
-    imageKey: 'services.couples',
-    duration: '120 minutes',
-    category: 'Special Packages'
+    name: 'BRONZ PROGRAMME',
+    description: [
+      'Turkish Bath & Scrub Peeling (85 min.) (Carrots & Cocoa Oil)',
+      'Foam Massage (€60)',
+      'Face Mask (€60)',
+      'Face Massage (€60)',
+      'Bronz Oil Massage (40 min.) (€60)'
+    ],
+    price: '',
+    paketImage: 'images (2).jpeg',
+    duration: '',
+    category: 'Traditional Services'
+  },
+  {
+    name: 'MEDICAL PROGRAMME',
+    description: [
+      'Turkish Bath (€70) (90 min.)',
+      'Peeling (€70)',
+      'Foam Massage (€70)',
+      'Face Mask (€70)',
+      'Face Massage (€70)',
+      'Medical Massage (50 min.) (€70)'
+    ],
+    price: '',
+    paketImage: 'images (3).jpeg',
+    duration: '',
+    category: 'Traditional Services'
+  },
+  {
+    name: 'SUPER PACKAGE',
+    description: [
+      'Sauna (Optional) (€75)',
+      'Turkish Bath - Foam Massage (€75)',
+      'Coffee Peeling (€75)',
+      'Refloxology Massage (€75)',
+      'Face Mask (€75)',
+      'Mix Therapy (60 min.) (€75)',
+      '(100 min.)'
+    ],
+    price: '',
+    paketImage: 'images (4).jpeg',
+    duration: '',
+    category: 'Traditional Services'
+  },
+  {
+    name: 'TURKISH BATH & MASSAGE',
+    description: [
+      'PEELING AND FOAM MASSAGE (30 min.) (€30)',
+      'HONEY AND FOAM MASSAGE (30 min.) (€30)',
+      'COFFEE PEELING (30 min.) (€30)',
+      'SEA SALT PEELING (30 min.) (€30)'
+    ],
+    price: '',
+    paketImage: 'images (5).jpeg',
+    duration: '',
+    category: 'Traditional Services'
+  },
+  {
+    name: 'CLASSIC MASSAGE',
+    description: [
+      'RELAX MASSAGE (35 min.) (€40)',
+      'MEDICAL MASSAGE (30 min.) (€40)',
+      'AROMATHERAPY MASSAGE (35 min.) (€40)',
+      'SPORT MASSAGE (35 min.) (€40)',
+      'REFLEXOLOGY MASSAGE (30 min.) (€40)',
+      'BRONZE MASSAGE (35 min.) (€40)'
+    ],
+    price: '',
+    paketImage: 'download.jpeg',
+    duration: '',
+    category: 'Traditional Services'
+  },
+  {
+    name: 'DELUXE MASSAGE',
+    description: [
+      'INDIAN HEAD MASSAGE (25 min) (€35)',
+      'MEDICAL STONE BACK MASSAGE (30 min.) (€45)',
+      'MEDICAL FULL BODY MASSAGE (60 min.) (€60)',
+      'HOT STONE THERAPY (35 min.) (€55)',
+      'DEEP TISSUE MASSAGE (60 min.) (€55)',
+      'BALI MASSAGE (35 min.) (€55)',
+      'MANDARA MASSAGE (4 HANDS) (60 min.) (€70)'
+    ],
+    price: '',
+    paketImage: 'download (1).jpeg',
+    duration: '',
+    category: 'Traditional Services'
   }
 ] as const;
 
@@ -37,7 +131,7 @@ const Services = () => {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {services.map((service) => {
-            const imageProps = getImageProps(service.imageKey);
+            const imageProps = getPaketImageProps(service.paketImage);
             return (
               <div key={service.name} className="bg-card rounded-lg overflow-hidden shadow-lg">
                 <div className="relative aspect-video">
@@ -53,19 +147,19 @@ const Services = () => {
                 </div>
                 <div className="p-6">
                   <h3 className="text-xl font-semibold mb-2">{service.name}</h3>
-                  <p className="text-muted-foreground mb-4">
-                    {service.description}
-                  </p>
+                  {Array.isArray(service.description) ? (
+                    <ul className="list-disc pl-5 space-y-1 mb-4">
+                      {service.description.map((item, idx) => (
+                        <li key={idx}>{item}</li>
+                      ))}
+                    </ul>
+                  ) : (
+                    <p className="text-muted-foreground mb-4">{service.description}</p>
+                  )}
                   <div className="flex items-center justify-between mb-4">
                     <span className="text-lg font-semibold">{service.price}</span>
                     <span className="text-sm text-muted-foreground">{service.duration}</span>
                   </div>
-                  <Link
-                    to={`/services#${service.name.toLowerCase().replace(/\s+/g, '-')}`}
-                    className="text-primary hover:underline"
-                  >
-                    Learn More →
-                  </Link>
                 </div>
               </div>
             );
