@@ -5,84 +5,89 @@ const services = [
   {
     name: 'BEFORE SUN PROGRAMME',
     description: [
-      'Turkish Bath & Scrub Peeling (€50) (80 min.)',
-      'Foam Massage (€50)',
-      'Face Mask (€50)',
-      'Face Massage (€50)',
-      'Full Body Relax Massage (30 min.) (€50)'
+      'Turkish Bath & Scrub Peeling',
+      'Foam Massage',
+      'Face Mask',
+      'Face Massage',
+      'Full Body Relax Massage',
+      '(80 min.) €50'
     ],
-    price: '',
+    price: '€50',
     paketImage: 'turkish.jpeg',
-    duration: '',
+    duration: '80 min.',
     category: 'Traditional Services'
   },
   {
     name: 'AFTER SUN PROGRAMME',
     description: [
-      'Turkish Bath (€50)',
-      'Honey or Chocolate (€50) (80 min.)',
-      'Foam Massage (€50)',
-      'Face Mask (€50)',
-      'Face Massage (€50)',
-      'Full Body Relax Massage (30 min.) (€50)'
+      'Turkish Bath',
+      'Honey or Chocolate',
+      'Foam Massage',
+      'Face Mask',
+      'Face Massage',
+      'Full Body Relax Massage',
+      '€50 (80 min.)'
     ],
-    price: '',
+    price: '€50',
     paketImage: 'hammam.jpeg',
-    duration: '',
+    duration: '80 min.',
     category: 'Traditional Services'
   },
   {
     name: 'BRONZ PROGRAMME',
     description: [
-      'Turkish Bath & Scrub Peeling (85 min.) (Carrots & Cocoa Oil)',
-      'Foam Massage (€60)',
-      'Face Mask (€60)',
-      'Face Massage (€60)',
-      'Bronz Oil Massage (40 min.) (€60)'
+      'Turkish Bath & Scrub Peeling',
+      '(Carrots & Cocoa Oil)',
+      'Foam Massage',
+      'Face Mask',
+      'Face Massage',
+      'Bronz Oil Massage',
+      '€60 (85 min.)'
     ],
-    price: '',
+    price: '€60',
     paketImage: 'mam.jpeg',
-    duration: '',
+    duration: '85 min.',
     category: 'Traditional Services'
   },
   {
     name: 'MEDICAL PROGRAMME',
     description: [
-      'Turkish Bath (€70) (90 min.)',
-      'Peeling (€70)',
-      'Foam Massage (€70)',
-      'Face Mask (€70)',
-      'Face Massage (€70)',
-      'Medical Massage (50 min.) (€70)'
+      'Turkish Bath',
+      'Peeling',
+      'Foam Massage',
+      'Face Mask',
+      'Face Massage',
+      'Medical Massage',
+      '€70 (90 min.)'
     ],
-    price: '',
+    price: '€70',
     paketImage: 'bath.jpeg',
-    duration: '',
+    duration: '90 min.',
     category: 'Traditional Services'
   },
   {
     name: 'SUPER PACKAGE',
     description: [
-      'Sauna (Optional) (€75)',
-      'Turkish Bath - Foam Massage (€75)',
-      'Coffee Peeling (€75)',
-      'Refloxology Massage (€75)',
-      'Face Mask (€75)',
-      'Mix Therapy (60 min.) (€75)',
-      '(100 min.)'
+      'Sauna (Optional)',
+      'Turkish Bath - Foam Massage',
+      'Coffee Peeling',
+      'Refloxology Massage',
+      'Face Mask',
+      'Mix Therapy',
+      '(100 min.) €75'
     ],
-    price: '',
+    price: '€75',
     paketImage: 'masage.jpeg',
-    duration: '',
+    duration: '100 min.',
     category: 'Traditional Services'
   },
   {
     name: 'TURKISH BATH & MASSAGE',
     description: [
-      'PEELING AND FOAM MASSAGE (30 min.) (€30)',
-      'HONEY AND FOAM MASSAGE (30 min.) (€30)',
-      'COFFEE PEELING (30 min.) (€30)',
-      'SEA SALT PEELING (30 min.) (€30)'
+      'PEELING AND FOAM MASSAGE (30 min.) €30',
+      'HONEY AND FOAM MASSAGE (30 min.) €30',
+      'COFFEE PEELING (30 min.) €30',
+      'SEA SALT PEELING (30 min.) €30'
     ],
     price: '',
     paketImage: 'images.jpeg',
@@ -92,12 +97,12 @@ const services = [
   {
     name: 'CLASSIC MASSAGE',
     description: [
-      'RELAX MASSAGE (35 min.) (€40)',
-      'MEDICAL MASSAGE (30 min.) (€40)',
-      'AROMATHERAPY MASSAGE (35 min.) (€40)',
-      'SPORT MASSAGE (35 min.) (€40)',
-      'REFLEXOLOGY MASSAGE (30 min.) (€40)',
-      'BRONZE MASSAGE (35 min.) (€40)'
+      'RELAX MASSAGE (35 min.) €40',
+      'MEDICAL MASSAGE (30 min.) €40',
+      'AROMATHERAPY MASSAGE (35 min.) €40',
+      'SPORT MASSAGE  (35 min.) €40',
+      'REFLEXOLOGY MASSAGE (30 min.) €40',
+      'BRONZE MASSAGE (35 min.) €40'
     ],
     price: '',
     paketImage: 'hamm.jpeg',
@@ -107,17 +112,18 @@ const services = [
   {
     name: 'DELUXE MASSAGE',
     description: [
-      'INDIAN HEAD MASSAGE (25 min) (€35)',
-      'MEDICAL STONE BACK MASSAGE (30 min.) (€45)',
-      'MEDICAL FULL BODY MASSAGE (60 min.) (€60)',
-      'HOT STONE THERAPY (35 min.) (€55)',
-      'DEEP TISSUE MASSAGE (60 min.) (€55)',
-      'BALI MASSAGE (35 min.) (€55)',
-      'MANDARA MASSAGE (4 HANDS) (60 min.) (€70)'
+      'INDIAN HEAD MASSAGE',
+      'MEDICAL STONE BACK MASSAGE',
+      'MEDICAL FULL BODY MASSAGE',
+      'HOT STONE THERAPY',
+      'DEEP TISSUE MASSAGE',
+      'BALI MASSAGE',
+      'MANDARA MASSAGE',
+      '€80 (110 min.)'
     ],
-    price: '',
+    price: '€80',
     paketImage: 'download.jpeg',
-    duration: '',
+    duration: '110 min.',
     category: 'Traditional Services'
   }
 ] as const;

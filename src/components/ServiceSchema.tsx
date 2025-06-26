@@ -19,14 +19,15 @@ const services: Service[] = [
   {
     name: "BEFORE SUN PROGRAMME",
     description: [
-      'Turkish Bath & Scrub Peeling (€50) (80 min.)',
-      'Foam Massage (€50)',
-      'Face Mask (€50)',
-      'Face Massage (€50)',
-      'Full Body Relax Massage (30 min.) (€50)'
+      'Turkish Bath & Scrub Peeling',
+      'Foam Massage',
+      'Face Mask',
+      'Face Massage',
+      'Full Body Relax Massage',
+      '(80 min.) €50'
     ],
-    price: 0,
-    duration: "80 minutes",
+    price: 50,
+    duration: "80 min.",
     imageKey: "services.traditional",
     category: "Turkish Bath",
     benefits: [
@@ -36,11 +37,11 @@ const services: Service[] = [
       "Skin hydration and glow"
     ],
     includes: [
-      "Turkish Bath & Scrub Peeling (80 min.)",
+      "Turkish Bath & Scrub Peeling",
       "Foam Massage",
       "Face Mask",
       "Face Massage",
-      "Full Body Relax Massage (30 min.)"
+      "Full Body Relax Massage"
     ],
     requirements: [
       "Swimsuit or disposable underwear",
@@ -51,15 +52,16 @@ const services: Service[] = [
   {
     name: "AFTER SUN PROGRAMME",
     description: [
-      'Turkish Bath (€50)',
-      'Honey or Chocolate (€50) (80 min.)',
-      'Foam Massage (€50)',
-      'Face Mask (€50)',
-      'Face Massage (€50)',
-      'Full Body Relax Massage (30 min.) (€50)'
+      'Turkish Bath',
+      'Honey or Chocolate',
+      'Foam Massage',
+      'Face Mask',
+      'Face Massage',
+      'Full Body Relax Massage',
+      '€50 (80 min.)'
     ],
-    price: 0,
-    duration: "80 minutes",
+    price: 50,
+    duration: "80 min.",
     imageKey: "services.traditional",
     category: "Turkish Bath",
     benefits: [
@@ -70,11 +72,11 @@ const services: Service[] = [
     ],
     includes: [
       "Turkish Bath",
-      "Honey or Chocolate treatment (80 min.)",
+      "Honey or Chocolate",
       "Foam Massage",
       "Face Mask",
       "Face Massage",
-      "Full Body Relax Massage (30 min.)"
+      "Full Body Relax Massage"
     ],
     requirements: [
       "Swimsuit or disposable underwear",
@@ -85,14 +87,16 @@ const services: Service[] = [
   {
     name: "BRONZ PROGRAMME",
     description: [
-      'Turkish Bath & Scrub Peeling (85 min.) (Carrots & Cocoa Oil)',
-      'Foam Massage (€60)',
-      'Face Mask (€60)',
-      'Face Massage (€60)',
-      'Bronz Oil Massage (40 min.) (€60)'
+      'Turkish Bath & Scrub Peeling',
+      '(Carrots & Cocoa Oil)',
+      'Foam Massage',
+      'Face Mask',
+      'Face Massage',
+      'Bronz Oil Massage',
+      '€60 (85 min.)'
     ],
-    price: 0,
-    duration: "85 minutes",
+    price: 60,
+    duration: "85 min.",
     imageKey: "services.traditional",
     category: "Turkish Bath",
     benefits: [
@@ -102,11 +106,12 @@ const services: Service[] = [
       "Enhanced skin glow"
     ],
     includes: [
-      "Turkish Bath & Scrub Peeling (85 min.) (Carrots & Cocoa Oil)",
+      "Turkish Bath & Scrub Peeling",
+      "(Carrots & Cocoa Oil)",
       "Foam Massage",
       "Face Mask",
       "Face Massage",
-      "Bronz Oil Massage (40 min.)"
+      "Bronz Oil Massage"
     ],
     requirements: [
       "Swimsuit or disposable underwear",
@@ -117,15 +122,16 @@ const services: Service[] = [
   {
     name: "MEDICAL PROGRAMME",
     description: [
-      'Turkish Bath (€70) (90 min.)',
-      'Peeling (€70)',
-      'Foam Massage (€70)',
-      'Face Mask (€70)',
-      'Face Massage (€70)',
-      'Medical Massage (50 min.) (€70)'
+      'Turkish Bath',
+      'Peeling',
+      'Foam Massage',
+      'Face Mask',
+      'Face Massage',
+      'Medical Massage',
+      '€70 (90 min.)'
     ],
-    price: 0,
-    duration: "90 minutes",
+    price: 70,
+    duration: "90 min.",
     imageKey: "services.traditional",
     category: "Turkish Bath",
     benefits: [
@@ -135,12 +141,12 @@ const services: Service[] = [
       "Stress and pain reduction"
     ],
     includes: [
-      "Turkish Bath (90 min.)",
+      "Turkish Bath",
       "Peeling",
       "Foam Massage",
       "Face Mask",
       "Face Massage",
-      "Medical Massage (50 min.)"
+      "Medical Massage"
     ],
     requirements: [
       "Swimsuit or disposable underwear",
@@ -151,16 +157,16 @@ const services: Service[] = [
   {
     name: "SUPER PACKAGE",
     description: [
-      'Sauna (Optional) (€75)',
-      'Turkish Bath - Foam Massage (€75)',
-      'Coffee Peeling (€75)',
-      'Refloxology Massage (€75)',
-      'Face Mask (€75)',
-      'Mix Therapy (60 min.) (€75)',
-      '(100 min.)'
+      'Sauna (Optional)',
+      'Turkish Bath - Foam Massage',
+      'Coffee Peeling',
+      'Refloxology Massage',
+      'Face Mask',
+      'Mix Therapy',
+      '(100 min.) €75'
     ],
-    price: 0,
-    duration: "100 minutes",
+    price: 75,
+    duration: "100 min.",
     imageKey: "services.traditional",
     category: "Turkish Bath",
     benefits: [
@@ -175,7 +181,7 @@ const services: Service[] = [
       "Coffee Peeling",
       "Refloxology Massage",
       "Face Mask",
-      "Mix Therapy (60 min.)"
+      "Mix Therapy"
     ],
     requirements: [
       "Swimsuit or disposable underwear",
@@ -186,13 +192,13 @@ const services: Service[] = [
   {
     name: "TURKISH BATH & MASSAGE",
     description: [
-      'PEELING AND FOAM MASSAGE (30 min.) (€30)',
-      'HONEY AND FOAM MASSAGE (30 min.) (€30)',
-      'COFFEE PEELING (30 min.) (€30)',
-      'SEA SALT PEELING (30 min.) (€30)'
+      'PEELING AND FOAM MASSAGE (30 min.) €30',
+      'HONEY AND FOAM MASSAGE (30 min.) €30',
+      'COFFEE PEELING (30 min.) €30',
+      'SEA SALT PEELING (30 min.) €30'
     ],
-    price: 0,
-    duration: "30 minutes",
+    price: 30,
+    duration: "30 min.",
     imageKey: "services.traditional",
     category: "Turkish Bath",
     benefits: [
@@ -202,10 +208,10 @@ const services: Service[] = [
       "Affordable wellness"
     ],
     includes: [
-      "Peeling and Foam Massage (30 min.)",
-      "Honey and Foam Massage (30 min.)",
-      "Coffee Peeling (30 min.)",
-      "Sea Salt Peeling (30 min.)"
+      "Peeling and Foam Massage (30 min.) €30",
+      "Honey and Foam Massage (30 min.) €30",
+      "Coffee Peeling (30 min.) €30",
+      "Sea Salt Peeling (30 min.) €30"
     ],
     requirements: [
       "Swimsuit or disposable underwear",
@@ -216,15 +222,15 @@ const services: Service[] = [
   {
     name: "CLASSIC MASSAGE",
     description: [
-      'RELAX MASSAGE (35 min.) (€40)',
-      'MEDICAL MASSAGE (30 min.) (€40)',
-      'AROMATHERAPY MASSAGE (35 min.) (€40)',
-      'SPORT MASSAGE (35 min.) (€40)',
-      'REFLEXOLOGY MASSAGE (30 min.) (€40)',
-      'BRONZE MASSAGE (35 min.) (€40)'
+      'RELAX MASSAGE (35 min.) €40',
+      'MEDICAL MASSAGE (30 min.) €40',
+      'AROMATHERAPY MASSAGE (35 min.) €40',
+      'SPORT MASSAGE  (35 min.) €40',
+      'REFLEXOLOGY MASSAGE (30 min.) €40',
+      'BRONZE MASSAGE (35 min.) €40'
     ],
-    price: 0,
-    duration: "35 minutes",
+    price: 40,
+    duration: "35 min.",
     imageKey: "services.traditional",
     category: "Turkish Bath",
     benefits: [
@@ -234,12 +240,12 @@ const services: Service[] = [
       "Stress reduction"
     ],
     includes: [
-      "Relax Massage (35 min.)",
-      "Medical Massage (30 min.)",
-      "Aromatherapy Massage (35 min.)",
-      "Sport Massage (35 min.)",
-      "Reflexology Massage (30 min.)",
-      "Bronze Massage (35 min.)"
+      "Relax Massage (35 min.) €40",
+      "Medical Massage (30 min.) €40",
+      "Aromatherapy Massage (35 min.) €40",
+      "Sport Massage  (35 min.) €40",
+      "Reflexology Massage (30 min.) €40",
+      "Bronze Massage (35 min.) €40"
     ],
     requirements: [
       "Swimsuit or disposable underwear",
@@ -250,32 +256,33 @@ const services: Service[] = [
   {
     name: "DELUXE MASSAGE",
     description: [
-      'INDIAN HEAD MASSAGE (25 min) (€35)',
-      'MEDICAL STONE BACK MASSAGE (30 min.) (€45)',
-      'MEDICAL FULL BODY MASSAGE (60 min.) (€60)',
-      'HOT STONE THERAPY (35 min.) (€55)',
-      'DEEP TISSUE MASSAGE (60 min.) (€55)',
-      'BALI MASSAGE (35 min.) (€55)',
-      'MANDARA MASSAGE (4 HANDS) (60 min.) (€70)'
+      'INDIAN HEAD MASSAGE',
+      'MEDICAL STONE BACK MASSAGE',
+      'MEDICAL FULL BODY MASSAGE',
+      'HOT STONE THERAPY',
+      'DEEP TISSUE MASSAGE',
+      'BALI MASSAGE',
+      'MANDARA MASSAGE',
+      '€80 (110 min.)'
     ],
-    price: 0,
-    duration: "60 minutes",
+    price: 80,
+    duration: "110 min.",
     imageKey: "services.traditional",
     category: "Turkish Bath",
     benefits: [
       "Ultimate relaxation",
-      "Specialized therapeutic techniques",
+      "Variety of massage techniques",
       "Deep muscle relief",
-      "Luxurious spa experience"
+      "Luxury experience"
     ],
     includes: [
-      "Indian Head Massage (25 min)",
-      "Medical Stone Back Massage (30 min.)",
-      "Medical Full Body Massage (60 min.)",
-      "Hot Stone Therapy (35 min.)",
-      "Deep Tissue Massage (60 min.)",
-      "Bali Massage (35 min.)",
-      "Mandara Massage (4 Hands) (60 min.)"
+      "Indian Head Massage",
+      "Medical Stone Back Massage",
+      "Medical Full Body Massage",
+      "Hot Stone Therapy",
+      "Deep Tissue Massage",
+      "Bali Massage",
+      "Mandara Massage"
     ],
     requirements: [
       "Swimsuit or disposable underwear",
