@@ -1,7 +1,19 @@
 import { Link } from 'react-router-dom';
 import { getImageProps, getPaketImageProps } from '@/utils/imageOptimization';
+import { ImageKey } from '@/types/image';
 
-const services = [
+type Service = {
+  name: string;
+  description: string | string[];
+  price: string;
+  duration: string;
+  category: string;
+} & (
+  | { imageKey: ImageKey; paketImage?: never }
+  | { paketImage: string; imageKey?: never }
+);
+
+const services: Service[] = [
   {
     name: 'Turkish Bath & Massage',
     description: 'Complete Turkish bath experience with traditional massage therapy for ultimate relaxation and wellness.',
@@ -145,7 +157,9 @@ const Services = () => {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service) => {
-            const imageProps = getPaketImageProps(service.paketImage);
+            const imageProps = service.paketImage 
+              ? getPaketImageProps(service.paketImage)
+              : getImageProps(service.imageKey);
             return (
               <div key={service.name} className="bg-card rounded-lg overflow-hidden shadow-lg">
                 <div className="relative aspect-video">

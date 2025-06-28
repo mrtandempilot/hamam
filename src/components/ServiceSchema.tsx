@@ -4,7 +4,7 @@ import { ImageKey } from '@/types/image';
 
 interface Service {
   name: string;
-  description: string[];
+  description: string | string[];
   price: number;
   duration: string;
   imageKey: ImageKey;
@@ -340,8 +340,8 @@ export const ServiceSchema = () => {
       },
       "geo": {
         "@type": "GeoCoordinates",
-        "latitude": "36.5500",
-        "longitude": "29.1167"
+        "latitude": "36.5516531",
+        "longitude": "29.1260625"
       },
       "openingHoursSpecification": [
         {
@@ -365,7 +365,7 @@ export const ServiceSchema = () => {
           "itemOffered": {
             "@type": "Service",
             "name": service.name,
-            "description": service.description.join('\n'),
+            "description": Array.isArray(service.description) ? service.description.join('\n') : service.description,
             "price": service.price,
             "priceCurrency": "TRY",
             "duration": service.duration,
