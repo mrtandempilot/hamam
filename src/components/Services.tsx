@@ -3,6 +3,14 @@ import { getImageProps } from '@/utils/imageOptimization';
 
 const services = [
   {
+    name: 'Turkish Bath & Massage',
+    description: 'Complete Turkish bath experience with traditional massage therapy for ultimate relaxation and wellness.',
+    price: '€65',
+    imageKey: 'services.traditional',
+    duration: '90 minutes',
+    category: 'Signature Services'
+  },
+  {
     name: 'Traditional Turkish Hamam',
     description: 'Experience the authentic Turkish bath ritual with our traditional hamam service.',
     price: '€45',
@@ -35,7 +43,7 @@ const Services = () => {
         <h2 className="text-3xl font-bold text-center mb-12">
           Our Services
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {services.map((service) => {
             const imageProps = getImageProps(service.imageKey);
             return (

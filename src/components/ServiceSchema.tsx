@@ -17,6 +17,33 @@ interface Service {
 
 const services: Service[] = [
   {
+    name: "Turkish Bath & Massage",
+    description: "Complete Turkish bath experience with traditional massage therapy for ultimate relaxation and wellness.",
+    price: 650,
+    duration: "90 minutes",
+    imageKey: "services.traditional",
+    category: "Signature Services",
+    benefits: [
+      "Complete Turkish bath ritual",
+      "Traditional massage therapy",
+      "Deep relaxation and stress relief",
+      "Improved circulation and detoxification"
+    ],
+    includes: [
+      "Traditional hamam experience",
+      "Kese (body scrub)",
+      "Foam massage",
+      "Extended massage therapy",
+      "Towel and slippers",
+      "Locker usage"
+    ],
+    requirements: [
+      "Swimsuit or disposable underwear",
+      "No health conditions preventing heat exposure"
+    ],
+    availability: "Daily 09:00-21:00"
+  },
+  {
     name: "Traditional Turkish Bath",
     description: "Experience the authentic Turkish hamam ritual with full body wash, kese exfoliation, and foam massage.",
     price: 400,
