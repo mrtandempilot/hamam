@@ -17,25 +17,30 @@ interface Service {
 
 const services: Service[] = [
   {
-    name: "Turkish Bath & Massage",
-    description: "Complete Turkish bath experience with traditional massage therapy for ultimate relaxation and wellness.",
-    price: 650,
-    duration: "90 minutes",
+    name: "TURKISH BATH & MASSAGE",
+    description: [
+      'PEELING AND FOAM MASSAGE (30 min.) €30',
+      'HONEY AND FOAM MASSAGE (30 min.) €30',
+      'COFFEE PEELING (30 min.) €30',
+      'SEA SALT PEELING (30 min.) €30',
+      'Sauna Optional'
+    ],
+    price: 30,
+    duration: "30 min.",
     imageKey: "services.traditional",
-    category: "Signature Services",
+    category: "Turkish Bath",
     benefits: [
-      "Complete Turkish bath ritual",
-      "Traditional massage therapy",
-      "Deep relaxation and stress relief",
-      "Improved circulation and detoxification"
+      "Cleansing and exfoliation",
+      "Relaxation and stress relief",
+      "Skin nourishment",
+      "Affordable wellness"
     ],
     includes: [
-      "Traditional hamam experience",
-      "Kese (body scrub)",
-      "Foam massage",
-      "Extended massage therapy",
-      "Towel and slippers",
-      "Locker usage"
+      "Peeling and Foam Massage (30 min.) €30",
+      "Honey and Foam Massage (30 min.) €30",
+      "Coffee Peeling (30 min.) €30",
+      "Sea Salt Peeling (30 min.) €30",
+      "Sauna Optional"
     ],
     requirements: [
       "Swimsuit or disposable underwear",
@@ -51,7 +56,7 @@ const services: Service[] = [
       'Face Mask',
       'Face Massage',
       'Full Body Relax Massage',
-      '(80 min.) €50'
+      'Sauna Optional'
     ],
     price: 50,
     duration: "80 min.",
@@ -68,7 +73,8 @@ const services: Service[] = [
       "Foam Massage",
       "Face Mask",
       "Face Massage",
-      "Full Body Relax Massage"
+      "Full Body Relax Massage",
+      "Sauna Optional"
     ],
     requirements: [
       "Swimsuit or disposable underwear",
@@ -209,36 +215,6 @@ const services: Service[] = [
       "Refloxology Massage",
       "Face Mask",
       "Mix Therapy"
-    ],
-    requirements: [
-      "Swimsuit or disposable underwear",
-      "No health conditions preventing heat exposure"
-    ],
-    availability: "Daily 09:00-21:00"
-  },
-  {
-    name: "TURKISH BATH & MASSAGE",
-    description: [
-      'PEELING AND FOAM MASSAGE (30 min.) €30',
-      'HONEY AND FOAM MASSAGE (30 min.) €30',
-      'COFFEE PEELING (30 min.) €30',
-      'SEA SALT PEELING (30 min.) €30'
-    ],
-    price: 30,
-    duration: "30 min.",
-    imageKey: "services.traditional",
-    category: "Turkish Bath",
-    benefits: [
-      "Cleansing and exfoliation",
-      "Relaxation and stress relief",
-      "Skin nourishment",
-      "Affordable wellness"
-    ],
-    includes: [
-      "Peeling and Foam Massage (30 min.) €30",
-      "Honey and Foam Massage (30 min.) €30",
-      "Coffee Peeling (30 min.) €30",
-      "Sea Salt Peeling (30 min.) €30"
     ],
     requirements: [
       "Swimsuit or disposable underwear",

@@ -15,12 +15,18 @@ type Service = {
 
 const services: Service[] = [
   {
-    name: 'Turkish Bath & Massage',
-    description: 'Complete Turkish bath experience with traditional massage therapy for ultimate relaxation and wellness.',
-    price: '€65',
-    imageKey: 'services.traditional',
-    duration: '90 minutes',
-    category: 'Signature Services'
+    name: 'TURKISH BATH & MASSAGE',
+    description: [
+      'PEELING AND FOAM MASSAGE (30 min.) €30',
+      'HONEY AND FOAM MASSAGE (30 min.) €30',
+      'COFFEE PEELING (30 min.) €30',
+      'SEA SALT PEELING (30 min.) €30',
+      'Sauna Optional'
+    ],
+    price: '',
+    paketImage: 'images.jpeg',
+    duration: '',
+    category: 'Traditional Services'
   },
   {
     name: 'BEFORE SUN PROGRAMME',
@@ -30,7 +36,7 @@ const services: Service[] = [
       'Face Mask',
       'Face Massage',
       'Full Body Relax Massage',
-      '(80 min.) €50'
+      'Sauna Optional'
     ],
     price: '€50',
     paketImage: 'turkish.jpeg',
@@ -99,19 +105,6 @@ const services: Service[] = [
     price: '€75',
     paketImage: 'masage.jpeg',
     duration: '100 min.',
-    category: 'Traditional Services'
-  },
-  {
-    name: 'TURKISH BATH & MASSAGE',
-    description: [
-      'PEELING AND FOAM MASSAGE (30 min.) €30',
-      'HONEY AND FOAM MASSAGE (30 min.) €30',
-      'COFFEE PEELING (30 min.) €30',
-      'SEA SALT PEELING (30 min.) €30'
-    ],
-    price: '',
-    paketImage: 'images.jpeg',
-    duration: '',
     category: 'Traditional Services'
   },
   {
