@@ -108,21 +108,6 @@ const services: Service[] = [
     category: 'Traditional Services'
   },
   {
-    name: 'CLASSIC MASSAGE',
-    description: [
-      'RELAX MASSAGE (35 min.) €40',
-      'MEDICAL MASSAGE (30 min.) €40',
-      'AROMATHERAPY MASSAGE (35 min.) €40',
-      'SPORT MASSAGE  (35 min.) €40',
-      'REFLEXOLOGY MASSAGE (30 min.) €40',
-      'BRONZE MASSAGE (35 min.) €40'
-    ],
-    price: '',
-    paketImage: 'hamm.jpeg',
-    duration: '',
-    category: 'Traditional Services'
-  },
-  {
     name: 'DELUXE MASSAGE',
     description: [
       'Turkish Bath & Foam Massage',
@@ -135,6 +120,21 @@ const services: Service[] = [
     price: '€80',
     paketImage: 'download.jpeg',
     duration: '110 min.',
+    category: 'Traditional Services'
+  },
+  {
+    name: 'CLASSIC MASSAGE',
+    description: [
+      'RELAX MASSAGE (35 min.) €40',
+      'MEDICAL MASSAGE (30 min.) €40',
+      'AROMATHERAPY MASSAGE (35 min.) €40',
+      'SPORT MASSAGE  (35 min.) €40',
+      'REFLEXOLOGY MASSAGE (30 min.) €40',
+      'BRONZE MASSAGE (35 min.) €40'
+    ],
+    price: '',
+    paketImage: 'hamm.jpeg',
+    duration: '',
     category: 'Traditional Services'
   }
 ] as const;

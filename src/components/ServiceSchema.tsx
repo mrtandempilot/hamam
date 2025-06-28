@@ -227,40 +227,6 @@ const services: Service[] = [
     availability: "Daily 09:00-21:00"
   },
   {
-    name: "CLASSIC MASSAGE",
-    description: [
-      'RELAX MASSAGE (35 min.) €40',
-      'MEDICAL MASSAGE (30 min.) €40',
-      'AROMATHERAPY MASSAGE (35 min.) €40',
-      'SPORT MASSAGE  (35 min.) €40',
-      'REFLEXOLOGY MASSAGE (30 min.) €40',
-      'BRONZE MASSAGE (35 min.) €40'
-    ],
-    price: 40,
-    duration: "35 min.",
-    imageKey: "services.traditional",
-    category: "Turkish Bath",
-    benefits: [
-      "Muscle relaxation",
-      "Pain relief",
-      "Improved circulation",
-      "Stress reduction"
-    ],
-    includes: [
-      "Relax Massage (35 min.) €40",
-      "Medical Massage (30 min.) €40",
-      "Aromatherapy Massage (35 min.) €40",
-      "Sport Massage  (35 min.) €40",
-      "Reflexology Massage (30 min.) €40",
-      "Bronze Massage (35 min.) €40"
-    ],
-    requirements: [
-      "Swimsuit or disposable underwear",
-      "No health conditions preventing heat exposure"
-    ],
-    availability: "Daily 09:00-21:00"
-  },
-  {
     name: "DELUXE MASSAGE",
     description: [
       'Turkish Bath & Foam Massage',
@@ -287,6 +253,40 @@ const services: Service[] = [
       "Indian Head Massage",
       "Aroma Therapy",
       "Sauna Optional"
+    ],
+    requirements: [
+      "Swimsuit or disposable underwear",
+      "No health conditions preventing heat exposure"
+    ],
+    availability: "Daily 09:00-21:00"
+  },
+  {
+    name: "CLASSIC MASSAGE",
+    description: [
+      'RELAX MASSAGE (35 min.) €40',
+      'MEDICAL MASSAGE (30 min.) €40',
+      'AROMATHERAPY MASSAGE (35 min.) €40',
+      'SPORT MASSAGE  (35 min.) €40',
+      'REFLEXOLOGY MASSAGE (30 min.) €40',
+      'BRONZE MASSAGE (35 min.) €40'
+    ],
+    price: 40,
+    duration: "35 min.",
+    imageKey: "services.traditional",
+    category: "Turkish Bath",
+    benefits: [
+      "Muscle relaxation",
+      "Pain relief",
+      "Improved circulation",
+      "Stress reduction"
+    ],
+    includes: [
+      "Relax Massage (35 min.) €40",
+      "Medical Massage (30 min.) €40",
+      "Aromatherapy Massage (35 min.) €40",
+      "Sport Massage  (35 min.) €40",
+      "Reflexology Massage (30 min.) €40",
+      "Bronze Massage (35 min.) €40"
     ],
     requirements: [
       "Swimsuit or disposable underwear",
