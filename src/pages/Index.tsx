@@ -19,19 +19,104 @@ type ServiceImageKey = 'services.traditional' | 'services.royal' | 'services.cou
 
 const services = [
   {
-    name: 'Traditional Turkish Hamam',
+    name: 'BEFORE SUN PROGRAMME',
     imageKey: 'services.traditional' as ServiceImageKey,
-    description: 'Experience the authentic Turkish bath ritual with our premium services'
+    description: [
+      'Turkish Bath & Scrub Peeling',
+      'Foam Massage',
+      'Face Mask',
+      'Face Massage',
+      'Full Body Relax Massage',
+      '(80 min.) €50'
+    ]
   },
   {
-    name: 'Royal Hamam Experience',
-    imageKey: 'services.royal' as ServiceImageKey,
-    description: 'Indulge in our luxury hamam experience with additional treatments'
+    name: 'AFTER SUN PROGRAMME',
+    imageKey: 'services.traditional' as ServiceImageKey,
+    description: [
+      'Turkish Bath',
+      'Honey or Chocolate',
+      'Foam Massage',
+      'Face Mask',
+      'Face Massage',
+      'Full Body Relax Massage',
+      '€50 (80 min.)'
+    ]
   },
   {
-    name: 'Couples Hamam Package',
-    imageKey: 'services.couples' as ServiceImageKey,
-    description: 'Share the authentic Turkish bath experience with your loved one'
+    name: 'BRONZ PROGRAMME',
+    imageKey: 'services.traditional' as ServiceImageKey,
+    description: [
+      'Turkish Bath & Scrub Peeling',
+      '(Carrots & Cocoa Oil)',
+      'Foam Massage',
+      'Face Mask',
+      'Face Massage',
+      'Bronz Oil Massage',
+      '€60 (85 min.)'
+    ]
+  },
+  {
+    name: 'MEDICAL PROGRAMME',
+    imageKey: 'services.traditional' as ServiceImageKey,
+    description: [
+      'Turkish Bath',
+      'Peeling',
+      'Foam Massage',
+      'Face Mask',
+      'Face Massage',
+      'Medical Massage',
+      '€70 (90 min.)'
+    ]
+  },
+  {
+    name: 'SUPER PACKAGE',
+    imageKey: 'services.traditional' as ServiceImageKey,
+    description: [
+      'Sauna (Optional)',
+      'Turkish Bath - Foam Massage',
+      'Coffee Peeling',
+      'Refloxology Massage',
+      'Face Mask',
+      'Mix Therapy',
+      '(100 min.) €75'
+    ]
+  },
+  {
+    name: 'TURKISH BATH & MASSAGE',
+    imageKey: 'services.traditional' as ServiceImageKey,
+    description: [
+      'PEELING AND FOAM MASSAGE (30 min.) €30',
+      'HONEY AND FOAM MASSAGE (30 min.) €30',
+      'COFFEE PEELING (30 min.) €30',
+      'SEA SALT PEELING (30 min.) €30'
+    ]
+  },
+  {
+    name: 'CLASSIC MASSAGE',
+    imageKey: 'services.traditional' as ServiceImageKey,
+    description: [
+      'RELAX MASSAGE (35 min.) €40',
+      'MEDICAL MASSAGE (30 min.) €40',
+      'AROMATHERAPY MASSAGE (35 min.) €40',
+      'SPORT MASSAGE  (35 min.) €40',
+      'REFLEXOLOGY MASSAGE (30 min.) €40',
+      'BRONZE MASSAGE (35 min.) €40'
+    ]
+  },
+  {
+    name: 'DELUXE MASSAGE',
+    imageKey: 'services.traditional' as ServiceImageKey,
+    description: [
+      'INDIAN HEAD MASSAGE',
+      'MEDICAL STONE BACK MASSAGE',
+      'MEDICAL FULL BODY MASSAGE',
+      'HOT STONE THERAPY',
+      'DEEP TISSUE MASSAGE',
+      'BALI MASSAGE',
+      'MANDARA MASSAGE',
+      '€80 (110 min.)'
+    ]
   }
 ] as const;
 
