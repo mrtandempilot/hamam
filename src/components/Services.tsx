@@ -125,13 +125,11 @@ const services: Service[] = [
   {
     name: 'DELUXE MASSAGE',
     description: [
-      'INDIAN HEAD MASSAGE',
-      'MEDICAL STONE BACK MASSAGE',
-      'MEDICAL FULL BODY MASSAGE',
-      'HOT STONE THERAPY',
-      'DEEP TISSUE MASSAGE',
-      'BALI MASSAGE',
-      'MANDARA MASSAGE',
+      'Turkish Bath & Foam Massage',
+      'Sea Salt Peeling',
+      'Face Mask',
+      'Indian Head Massage',
+      'Aroma Therapy',
       'Sauna Optional'
     ],
     price: '€80',
