@@ -176,8 +176,8 @@ const Services = () => {
                     <p className="text-muted-foreground mb-4">{service.description}</p>
                   )}
                   <div className="flex items-center justify-between mb-4">
-                    <span className="text-lg font-semibold">{service.price}</span>
-                    <span className="text-sm text-muted-foreground">{service.duration}</span>
+                    <span className="text-2xl font-semibold">{service.price}</span>
+                    <span className="text-2xl font-semibold">{service.duration}</span>
                   </div>
                 </div>
               </div>
