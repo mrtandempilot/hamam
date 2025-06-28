@@ -52,7 +52,7 @@ const services: Service[] = [
       'Face Mask',
       'Face Massage',
       'Full Body Relax Massage',
-      '€50 (80 min.)'
+      'Sauna Optional'
     ],
     price: '€50',
     paketImage: 'hammam.jpeg',
@@ -68,7 +68,7 @@ const services: Service[] = [
       'Face Mask',
       'Face Massage',
       'Bronz Oil Massage',
-      '€60 (85 min.)'
+      'Sauna Optional'
     ],
     price: '€60',
     paketImage: 'mam.jpeg',
@@ -84,7 +84,7 @@ const services: Service[] = [
       'Face Mask',
       'Face Massage',
       'Medical Massage',
-      '€70 (90 min.)'
+      'Sauna Optional'
     ],
     price: '€70',
     paketImage: 'bath.jpeg',
@@ -100,7 +100,7 @@ const services: Service[] = [
       'Refloxology Massage',
       'Face Mask',
       'Mix Therapy',
-      '(100 min.) €75'
+      'Sauna Optional'
     ],
     price: '€75',
     paketImage: 'masage.jpeg',
@@ -132,7 +132,7 @@ const services: Service[] = [
       'DEEP TISSUE MASSAGE',
       'BALI MASSAGE',
       'MANDARA MASSAGE',
-      '€80 (110 min.)'
+      'Sauna Optional'
     ],
     price: '€80',
     paketImage: 'download.jpeg',

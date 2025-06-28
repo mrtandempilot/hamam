@@ -91,7 +91,7 @@ const services: Service[] = [
       'Face Mask',
       'Face Massage',
       'Full Body Relax Massage',
-      '€50 (80 min.)'
+      'Sauna Optional'
     ],
     price: 50,
     duration: "80 min.",
@@ -109,7 +109,8 @@ const services: Service[] = [
       "Foam Massage",
       "Face Mask",
       "Face Massage",
-      "Full Body Relax Massage"
+      "Full Body Relax Massage",
+      "Sauna Optional"
     ],
     requirements: [
       "Swimsuit or disposable underwear",
@@ -126,7 +127,7 @@ const services: Service[] = [
       'Face Mask',
       'Face Massage',
       'Bronz Oil Massage',
-      '€60 (85 min.)'
+      'Sauna Optional'
     ],
     price: 60,
     duration: "85 min.",
@@ -144,7 +145,8 @@ const services: Service[] = [
       "Foam Massage",
       "Face Mask",
       "Face Massage",
-      "Bronz Oil Massage"
+      "Bronz Oil Massage",
+      "Sauna Optional"
     ],
     requirements: [
       "Swimsuit or disposable underwear",
@@ -161,7 +163,7 @@ const services: Service[] = [
       'Face Mask',
       'Face Massage',
       'Medical Massage',
-      '€70 (90 min.)'
+      'Sauna Optional'
     ],
     price: 70,
     duration: "90 min.",
@@ -179,7 +181,8 @@ const services: Service[] = [
       "Foam Massage",
       "Face Mask",
       "Face Massage",
-      "Medical Massage"
+      "Medical Massage",
+      "Sauna Optional"
     ],
     requirements: [
       "Swimsuit or disposable underwear",
@@ -196,7 +199,7 @@ const services: Service[] = [
       'Refloxology Massage',
       'Face Mask',
       'Mix Therapy',
-      '(100 min.) €75'
+      'Sauna Optional'
     ],
     price: 75,
     duration: "100 min.",
@@ -214,7 +217,8 @@ const services: Service[] = [
       "Coffee Peeling",
       "Refloxology Massage",
       "Face Mask",
-      "Mix Therapy"
+      "Mix Therapy",
+      "Sauna Optional"
     ],
     requirements: [
       "Swimsuit or disposable underwear",
